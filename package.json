@@ -1,0 +1,21 @@
+{
+  "name": "minimalNode",
+  "version": "1.0.0",
+  "description": "A minimal Node.js setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "FoteinosMerg <foteinosmerg@gmail.com> (https://github.com/FoteinosMerg)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0"
+  }
+}
