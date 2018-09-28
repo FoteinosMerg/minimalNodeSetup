@@ -1,6 +1,5 @@
 "use strict"
-
-// Import env variables readability; better before all other imports
 import 'dotenv/config';
+require('./services/cache');
 
-console.log('\n * Minimal Node.js setup\n');
+console.log('\n * Node.js setup with MongoDB supported by Redis\n');
