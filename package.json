@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "A minimal Node.js setup",
   "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js"
+    "start": "nodemon --exec babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [],
   "author": "FoteinosMerg <foteinosmerg@gmail.com> (https://github.com/FoteinosMerg)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -16,8 +21,6 @@
     "nodemon": "^1.18.4"
   },
   "dependencies": {
-    "dotenv": "^6.0.0",
-    "mongoose": "^5.2.18",
-    "redis": "^2.8.0"
+    "dotenv": "^6.0.0"
   }
 }

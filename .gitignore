@@ -1,5 +1,6 @@
-.env
 node_modules/
-*[nN]otes*
 package-lock.json
-dependencies.txt
+.env
+dev.js
+*dependencies*
+*[nN]otes*
