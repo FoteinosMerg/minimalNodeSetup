@@ -1,6 +1,8 @@
 "use strict";
 module.exports = {
-  /* Envronental variables configured at deployment;
-  accesed as 'process.env.<variable name>', e.g.,
-  cookieKey: process.env.COOKIE_KEY */
+  HTTP_PORT: process.env.HTTP_PORT,
+  P2P_PORT: process.env.P2P_PORT,
+  PEERS: process.env.PEERS,
+  DIFFICULTY: process.env.DIFFICULTY,
+  MINE_RATE: process.env.MINE_RATE
 };

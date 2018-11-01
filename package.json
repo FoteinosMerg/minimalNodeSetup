@@ -1,15 +1,17 @@
 {
-  "name": "minimalNode",
+  "name": "Blockchain-with-Node",
   "version": "1.0.0",
-  "description": "A minimal Node.js setup",
-  "main": "index.js",
+  "description": "Blockchain built upon Node.js",
+  "main": "src/index.js",
   "engines": {
     "node": "8.1.1",
     "npm": "5.0.3"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
-    "dev": "nodemon --exec babel-node src/index.js"
+    "start": "node ./src",
+    "dev": "nodemon --exec babel-node ./src",
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test"
   },
   "keywords": [],
   "author": "FoteinosMerg <foteinosmerg@gmail.com> (https://github.com/FoteinosMerg)",
@@ -18,9 +20,14 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "nodemon": "^1.18.4"
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.5"
   },
   "dependencies": {
-    "dotenv": "^6.0.0"
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "ws": "^6.1.0"
   }
 }
